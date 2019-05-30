@@ -1,0 +1,56 @@
+.slogan
+    height: 100vh
+    padding-top: 120px
+    overflow: hidden
+    position: relative
+    .slogan__image
+        .slogan__image__shadow
+            background-color: black
+            width: 100%
+            height: 100%
+            .slogan__image--main
+                width: 100%
+                height: 80%
+                position: absolute
+                top: 120px
+                left: 0
+    .slogan__wrapper
+        z-index: 2
+        position: absolute
+        bottom: 119px
+        left: 50%
+        transform: translate(-50%,-50%)
+        color: white
+        width: 300px
+        text-align: center
+        .slogan__wrapper__title
+            font-family: "Roboto - Bold"
+            text-transform: uppercase
+            .slogan__wrapper__title--blue
+                color: #24b7f1
+        .slogan__wrapper__content
+            font-family: "Roboto"
+            font-size: 14px
+            margin-top: 10px
+        .slogan__wrapper__button
+            width: 121px
+            height: 41px
+            margin-top: 10px
+            text-transform: uppercase
+            cursor: pointer
+            .fa-arrow-right::before
+                font-size: 15px
+                
+                
+        .slogan__wrapper__button--blue
+            background-color: #2095f2
+            color: white
+            border-radius: 5%
+    .slogan__scroll-img
+        position: absolute
+        bottom: 10px
+        left: 50%
+        transform: translateX(-50%)
+        color: white
+        cursor: pointer
+        
