@@ -1,0 +1,112 @@
+
+.header
+    width: 100%
+    height: 120px
+    background-color: #ffffff
+    overflow: hidden
+    font-family: Roboto
+    position: fixed
+    .header__aside
+        height: 50px
+        background-color: #1976d2
+        color: white
+        font-size: 16px    
+        position: relative
+        .header__aside__phone
+            width: 170px
+            height: 20px
+            line-height: 20px
+            position: absolute
+            top: 2px
+            left: 2px
+            .aside__phone__icon
+                padding-left: 4px
+            .aside__phone__number
+                display: inline-block
+        .header__aside__contact
+            width: 170px
+            height: 20px
+            line-height: 20px 
+            position: absolute
+            bottom: 2px
+            left: 2px
+            .aside__contact__icon
+                padding-left: 4px
+            .aside__contact__email
+                display: inline-block
+        .header__aside__icons
+            position: absolute
+            right: 10px
+            top: 50%
+            transform: translateY(-50%)
+            width: 124px
+            .fab
+                cursor: pointer
+                font-size: 14px
+                width: 20px
+                height: 20px
+                margin-right: 2px
+                border-radius: 50%
+                background-color: white
+                color: rgb(25,118,210)
+                text-align: center
+                line-height: 20px
+            .aside__icons--red
+                background-color: red
+                color: white
+            .aside__icons--last-child
+                margin-right: 0px
+    .header__logo
+        width: 180px
+        height: 70px
+        padding: 10px
+    .header__icon
+        position: absolute
+        top: 67.5px
+        right: 0
+        height: 35px
+        width: 35px
+        text-align: center
+        line-height: 35px
+        font-size: 30px
+    .header__icon-bars
+        right: 45px
+        cursor: pointer
+    .header__nav
+        display: none
+        .nav__list
+            list-style: none
+            text-align: center
+            .nav__item
+                padding: 5px
+                position: relative
+                .nav__link
+                    display: block
+                    cursor: pointer
+                    text-decoration: none
+                    text-transform: uppercase
+                    color: black
+                .nav__link:hover
+                    color: rgb(249,93,90)
+            .nav__item:hover > .nav__item--red
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 1px
+                background-color: red
+    .header__search-icon
+        right: 5px
+        border: 1px solid black
+        font-size: 24px
+        color: white
+        background-color: #f95d5a
+        border-radius: 50%
+        cursor: pointer
+
+.header--active
+    height: 332px
+    .header__nav--active
+        display: block
+            
+                
