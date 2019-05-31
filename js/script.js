@@ -29,5 +29,44 @@ for (let i = 0; i < portList.length; i++) {
     document.querySelector(".portfolio__container__center--" + portList[i]).addEventListener("click", function () {
         document.querySelector(".portfolio__wrap__container--" + portList[i]).classList.remove("portfolio__wrap__container--active")
     })
-
 }
+
+//Team
+
+const circleDivList = ["one", "two", "three"]
+
+/*for (let i=0;i<circleDivList.length;i++){
+    document.querySelector(".team__order__circle--" + circleDivList[i]).addEventListener("click",function(){
+        document.querySelector(".team__order__circle--" + circleDivList[i]).classList.toggle("team__order__circle--active")
+    })
+}*/
+document.querySelector(".team__order__circle--" + circleDivList[0]).addEventListener("click", function () {
+    document.querySelector(".team__order__circle--" + circleDivList[0]).classList.add("team__order__circle--active")
+    document.querySelector(".team__order__circle--" + circleDivList[1]).classList.remove("team__order__circle--active")
+    document.querySelector(".team__order__circle--" + circleDivList[2]).classList.remove("team__order__circle--active")
+    document.querySelector(".container__image__photo").classList.add("container__image__photo--active")
+    document.querySelector(".team__member__primary").style.zIndex = 2
+    document.querySelector(".team__member__secondary").style.zIndex = 1
+    document.querySelector(".team__member__tertiary").style.zIndex = 0
+})
+
+
+document.querySelector(".team__order__circle--" + circleDivList[1]).addEventListener("click", function () {
+    document.querySelector(".team__order__circle--" + circleDivList[1]).classList.add("team__order__circle--active")
+    document.querySelector(".team__order__circle--" + circleDivList[2]).classList.remove("team__order__circle--active")
+    document.querySelector(".team__order__circle--" + circleDivList[0]).classList.remove("team__order__circle--active")
+    document.querySelector(".container__image__photo").classList.add("container__image__photo--active")
+    document.querySelector(".team__member__primary").style.zIndex = 0
+    document.querySelector(".team__member__secondary").style.zIndex = 2
+    document.querySelector(".team__member__tertiary").style.zIndex = 1
+})
+
+document.querySelector(".team__order__circle--" + circleDivList[2]).addEventListener("click", function () {
+    document.querySelector(".team__order__circle--" + circleDivList[2]).classList.add("team__order__circle--active")
+    document.querySelector(".team__order__circle--" + circleDivList[0]).classList.remove("team__order__circle--active")
+    document.querySelector(".team__order__circle--" + circleDivList[1]).classList.remove("team__order__circle--active")
+    document.querySelector(".container__image__photo").classList.add("container__image__photo--active")
+    document.querySelector(".team__member__primary").style.zIndex = 1
+    document.querySelector(".team__member__secondary").style.zIndex = 0
+    document.querySelector(".team__member__tertiary").style.zIndex = 2
+})
