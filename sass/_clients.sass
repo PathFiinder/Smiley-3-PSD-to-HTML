@@ -1,0 +1,100 @@
+.clients
+    height: 764px
+    background-color: #1976d2
+    padding-top: 60px
+    font-family: Roboto
+    color: white
+    position: relative
+    .clients__header
+        height: 100px
+        width: 80%
+        margin: 0 auto   
+        text-align: center
+        position: relative
+        .clients__header__title
+            font-size: 20px
+            text-transform: uppercase
+            margin-bottom: 10px
+        .clients__header__content
+            font-size: 16px
+            font-weight: normal
+        .clients__header__line-hori
+            position: absolute
+            bottom: 10px
+            left: 50%
+            transform: translateX(-50%)
+            height: 3px
+            width: 50px
+            background-color: white
+    .clients__person
+        width: 80%
+        height: 525px
+        background-color: #1976d2
+        position: absolute
+        top: 190px // margin-top: 30px
+        left: 50%
+        transform: translateX(-50%)
+        .clients__person__photo
+            width: 100%
+            height: 180px
+            position: relative
+            .person__image
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                border: 4px solid white
+                border-radius: 60%
+                height: 120px
+                width: 120px
+        .clients__person__name
+            text-transform: uppercase
+            text-align: center
+            font-size: 18px
+            margin-bottom: 5px
+        .clients__person__stand
+            text-transform: uppercase
+            text-align: center
+            font-size: 16px
+            font-weight: normal
+        .clients__person__comment
+            margin-top: 20px
+            border: 2px solid white
+            height: 270px
+            padding: 15px
+            text-align: center
+            position: relative
+            .clients__comment__content
+                font-size: 16px
+                font-weight: normal
+            .comment__arrow
+                color: #03a9f4
+                border: 1px solid white
+                background-color: white
+                border-radius: 50%
+                width: 30px
+                height: 30px
+                line-height: 30px
+                text-align: center
+                font-size: 20px
+                position: absolute
+            .comment__arrow:hover
+                background-color: #ef5350
+                color: white
+            .comment__arrow--left
+                top: 50%
+                left: -15px
+                transform: translateY(-50%)
+            .comment__arrow--right
+                top: 50%
+                right: -15px
+                transform: translateY(-50%)
+    .clients__person__primary
+        z-index: 2
+        
+    
+    .clients__person__secondary
+        z-index: 1
+        
+    .clients__person__tertiary
+        z-index: 0

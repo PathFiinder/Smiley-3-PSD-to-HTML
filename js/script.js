@@ -70,3 +70,13 @@ document.querySelector(".team__order__circle--" + circleDivList[2]).addEventList
     document.querySelector(".team__member__secondary").style.zIndex = 0
     document.querySelector(".team__member__tertiary").style.zIndex = 2
 })
+
+//Clients
+
+
+
+
+document.querySelector(".comment__arrow--left").addEventListener("click",function(){
+    document.querySelector(".clients__person__primary").style.zIndex -= 2 // 0 
+    document.querySelector(".clients__person__tertiary").style.zIndex += 2 //2
+})
