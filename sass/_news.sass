@@ -1,3 +1,77 @@
 .news
     height: 800px
-    background-color: red
+    font-family: Roboto
+    padding-top: 20px
+    .news__caption  
+        margin: 0 auto
+        width: 80%
+        height: 100px
+        text-align: center
+        position: relative
+        .news__caption__title
+            text-transform: uppercase
+            font-size: 20px
+            margin-bottom: 10px
+        .news__caption__content
+            font-size: 14px
+            font-weight: normal
+        .news__caption__line-hori
+            display: block
+            height: 3px
+            width: 50px
+            background-color: #03a9f4
+            position: absolute
+            bottom: 10px
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 2%
+    .news__wrapper
+        height: 630px
+        width: 280px
+        margin: 30px auto 0px auto
+        display: flex
+        flex-direction: column
+        .news__main-info
+            flex-basis: 33.33%
+            overflow: hidden
+            position: relative
+            margin-bottom: 10px
+            .news__main-info__image
+                .main-info__photo
+                    height: 100px
+                    width: 280px
+                    border: 1px solid black
+            .news__main-info__title
+                text-transform: uppercase
+                font-size: 14px
+                margin-top: 3px  
+                padding-left: 5px
+            .news__main-info__author 
+                  font-size: 10px   
+                  color: #333333 
+                  margin-top: 5px
+                  padding-left: 5px
+            .news__main-info__content
+                margin-top: 5px
+                font-size: 11px
+                padding-left: 5px
+            .news__main-info__arrow
+                position: absolute
+                top: 50%
+                right: 15px
+                transform: translateY(-50%)
+                color: white
+                width: 30px
+                height: 30px
+                background-color: #2095f2
+                text-align: center
+                line-height: 30px
+                font-size: 22px
+                border-radius: 50%
+                cursor: pointer
+            .news__main-info__arrow:hover
+                background-color: #ef5350
+
+        .news__main-info--last
+            margin-bottom: 0px        
+        

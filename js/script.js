@@ -11,13 +11,50 @@ document.querySelector(".header__icon-bars").addEventListener("click", function 
     }
 })
 
-for (let j = 0; j < buttonList.length; j++) {
-    document.querySelector(buttonList[j]).addEventListener('click', function () {
-        for (let k = 0; k < activeList.length; k++) {
-            document.querySelector("." + activeList[k]).classList.remove(activeList[k] + '--active');
-        }
-    })
+
+//Scroll
+
+const homePosTop = $('.slogan').offset().top
+const servicesPosTop = $('.our-services').offset().top
+const aboutPosTop = $('.media').offset().top
+const portfolioPosTop = $('.portfolio').offset().top
+const pricingPosTop = $('.pricing').offset().top
+const blogPosTop = $('.news').offset().top
+const contactPosTop = $('.updates').offset().top
+
+function toScroll(PosTop) {
+    $('body, html').animate({
+        scrollTop: PosTop
+    }, 1000)
+    document.querySelector(".header").classList.remove("header--active")
+    document.querySelector(".header__nav").classList.remove("header__nav--active")
 }
+
+
+
+document.querySelector(".nav__link--home").addEventListener('click', function () {
+    toScroll(homePosTop)
+});
+
+document.querySelector(".nav__link--services").addEventListener('click', function () {
+    toScroll(servicesPosTop)
+});
+
+document.querySelector(".nav__link--about").addEventListener('click', function () {
+    toScroll(aboutPosTop)
+});
+document.querySelector(".nav__link--portfolio").addEventListener('click', function () {
+    toScroll(portfolioPosTop)
+});
+document.querySelector(".nav__link--pricing").addEventListener('click', function () {
+    toScroll(pricingPosTop)
+});
+document.querySelector(".nav__link--blog").addEventListener('click', function () {
+    toScroll(blogPosTop)
+});
+document.querySelector(".nav__link--contact").addEventListener('click', function () {
+    toScroll(contactPosTop)
+});
 
 //Portfolio
 const portList = ["one", "two", "three", "four", "five", "six", "seven", "eight"]
@@ -151,7 +188,7 @@ document.querySelector(".clients__order__circle--tertiary").addEventListener("cl
 
 //Price
 const offertList = ["basic", "standard", "professional"]
-const priceList = ["primary","secondary","tertiary"]
+const priceList = ["primary", "secondary", "tertiary"]
 for (let i = 0; i < offertList.length; i++) {
     document.querySelector(".offert__button__" + offertList[i]).addEventListener("click", function () {
         document.querySelector(".pricing__offert__price--" + priceList[i]).classList.toggle("pricing__offert__price--active")
