@@ -73,10 +73,116 @@ document.querySelector(".team__order__circle--" + circleDivList[2]).addEventList
 
 //Clients
 
-
-
+/*let rightCounter = 0
+let leftCounter = 0 
 
 document.querySelector(".comment__arrow--left").addEventListener("click",function(){
-    document.querySelector(".clients__person__primary").style.zIndex -= 2 // 0 
-    document.querySelector(".clients__person__tertiary").style.zIndex += 2 //2
+    
+    document.querySelector(".clients__person__primary").style.zIndex = 0 
+    document.querySelector(".clients__person__secondary").style.zIndex = 1
+    
+})
+
+document.querySelector(".comment__arrow--right").addEventListener("click",function(){
+    if (rightCounter == 0){
+        document.querySelector(".clients__person__primary").style.zIndex = 0 
+        document.querySelector(".clients__person__secondary").style.zIndex = 1
+        document.querySelector(".person__comment__primary > .comment__arrow--right").classList.add("comment__arrow--no-active")
+        document.querySelector(".person__comment__secondary > .comment__arrow--right").classList.remove("comment__arrow--no-active")
+        document.querySelector(".person__comment__secondary > .comment__arrow--left").classList.remove("comment__arrow--no-active")
+        document.querySelector(".person__comment__secondary > .comment__arrow--right").classList.add("comment__arrow--active")
+        document.querySelector(".person__comment__secondary > .comment__arrow--left").classList.add("comment__arrow--active")
+        console.log("c = 0")
+        rightCounter++
+    } else if (rightCounter == 1) {
+        document.querySelector(".clients__person__secondary").style.zIndex = 0
+        document.querySelector(".clients__person__tertiary").style.zIndex = 1
+        document.querySelector(".person__comment__secondary > .comment__arrow--right").classList.add("comment__arrow--no-active")
+        document.querySelector(".person__comment__secondary > .comment__arrow--left").classList.add("comment__arrow--no-active")
+        console.log("c = 1")
+        rightCounter = 0
+    } 
+})*/
+
+document.querySelector(".clients__order__circle--primary").addEventListener("click", function () {
+    document.querySelector(".clients__person__primary").style.zIndex = 1
+    document.querySelector(".clients__person__secondary").style.zIndex = 0
+    document.querySelector(".clients__person__tertiary").style.zIndex = 0
+    document.querySelector(".person__comment__primary").style.zIndex = 1
+    document.querySelector(".person__comment__secondary").style.zIndex = 0
+    document.querySelector(".person__comment__tertiary").style.zIndex = 0
+    document.querySelector(".clients__person__primary > .clients__person__photo > .person__image").classList.add("person__image--active")
+    document.querySelector(".clients__person__secondary > .clients__person__photo > .person__image").classList.remove("person__image--active")
+    document.querySelector(".clients__person__tertiary > .clients__person__photo > .person__image").classList.remove("person__image--active")
+    document.querySelector(".clients__order__circle--primary").classList.add("clients__order__circle--active")
+    document.querySelector(".clients__order__circle--secondary").classList.remove("clients__order__circle--active")
+    document.querySelector(".clients__order__circle--tertiary").classList.remove("clients__order__circle--active")
+})
+
+document.querySelector(".clients__order__circle--secondary").addEventListener("click", function () {
+    document.querySelector(".clients__person__primary").style.zIndex = 0
+    document.querySelector(".clients__person__secondary").style.zIndex = 1
+    document.querySelector(".clients__person__tertiary").style.zIndex = 0
+    document.querySelector(".person__comment__primary").style.zIndex = 0
+    document.querySelector(".person__comment__secondary").style.zIndex = 1
+    document.querySelector(".person__comment__tertiary").style.zIndex = 0
+    document.querySelector(".clients__person__primary > .clients__person__photo > .person__image").classList.remove("person__image--active")
+    document.querySelector(".clients__person__secondary > .clients__person__photo > .person__image").classList.add("person__image--active")
+    document.querySelector(".clients__person__tertiary > .clients__person__photo > .person__image").classList.remove("person__image--active")
+    document.querySelector(".clients__order__circle--primary").classList.remove("clients__order__circle--active")
+    document.querySelector(".clients__order__circle--secondary").classList.add("clients__order__circle--active")
+    document.querySelector(".clients__order__circle--tertiary").classList.remove("clients__order__circle--active")
+})
+
+document.querySelector(".clients__order__circle--tertiary").addEventListener("click", function () {
+    document.querySelector(".clients__person__primary").style.zIndex = 0
+    document.querySelector(".clients__person__secondary").style.zIndex = 0
+    document.querySelector(".clients__person__tertiary").style.zIndex = 1
+    document.querySelector(".person__comment__primary").style.zIndex = 0
+    document.querySelector(".person__comment__secondary").style.zIndex = 0
+    document.querySelector(".person__comment__tertiary").style.zIndex = 1
+    document.querySelector(".clients__person__primary > .clients__person__photo > .person__image").classList.remove("person__image--active")
+    document.querySelector(".clients__person__secondary > .clients__person__photo > .person__image").classList.remove("person__image--active")
+    document.querySelector(".clients__person__tertiary > .clients__person__photo > .person__image").classList.add("person__image--active")
+    document.querySelector(".clients__order__circle--primary").classList.remove("clients__order__circle--active")
+    document.querySelector(".clients__order__circle--secondary").classList.remove("clients__order__circle--active")
+    document.querySelector(".clients__order__circle--tertiary").classList.add("clients__order__circle--active")
+})
+
+//Price
+const offertList = ["basic", "standard", "professional"]
+const priceList = ["primary","secondary","tertiary"]
+for (let i = 0; i < offertList.length; i++) {
+    document.querySelector(".offert__button__" + offertList[i]).addEventListener("click", function () {
+        document.querySelector(".pricing__offert__price--" + priceList[i]).classList.toggle("pricing__offert__price--active")
+        document.querySelector(".pricing__offert__line-hori--" + priceList[i]).classList.toggle("pricing__offert__line-hori--active")
+    })
+}
+
+
+document.querySelector(".price__order__circle--primary").addEventListener("click", function () {
+    document.querySelector(".pricing__offert--basic").style.zIndex = 1
+    document.querySelector(".pricing__offert--standard").style.zIndex = 0
+    document.querySelector(".pricing__offert--professional").style.zIndex = 0
+    document.querySelector(".price__order__circle--primary").classList.add("price__order__circle--active")
+    document.querySelector(".price__order__circle--secondary").classList.remove("price__order__circle--active")
+    document.querySelector(".price__order__circle--tertiary").classList.remove("price__order__circle--active")
+})
+
+document.querySelector(".price__order__circle--secondary").addEventListener("click", function () {
+    document.querySelector(".pricing__offert--basic").style.zIndex = 0
+    document.querySelector(".pricing__offert--standard").style.zIndex = 1
+    document.querySelector(".pricing__offert--professional").style.zIndex = 0
+    document.querySelector(".price__order__circle--primary").classList.remove("price__order__circle--active")
+    document.querySelector(".price__order__circle--secondary").classList.add("price__order__circle--active")
+    document.querySelector(".price__order__circle--tertiary").classList.remove("price__order__circle--active")
+})
+
+document.querySelector(".price__order__circle--tertiary").addEventListener("click", function () {
+    document.querySelector(".pricing__offert--basic").style.zIndex = 0
+    document.querySelector(".pricing__offert--standard").style.zIndex = 0
+    document.querySelector(".pricing__offert--professional").style.zIndex = 1
+    document.querySelector(".price__order__circle--primary").classList.remove("price__order__circle--active")
+    document.querySelector(".price__order__circle--secondary").classList.remove("price__order__circle--active")
+    document.querySelector(".price__order__circle--tertiary").classList.add("price__order__circle--active")
 })
