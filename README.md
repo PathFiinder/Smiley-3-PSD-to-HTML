@@ -7,7 +7,7 @@ Tech Work used:
  - HTML5 (BEM)
  - CSS3 (Flexbox)
  - SASS
- - RWD
+ - RWD (Mobile First)
  - JavaScript
  - jQuery
 
