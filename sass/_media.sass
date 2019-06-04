@@ -192,7 +192,7 @@
         height: 190px
         .brand__images
             flex-direction: row
-            flex-wrap: no-wrap
+            flex-wrap: nowrap
             .brand__photo
                 flex-basis: 25%
                 height: 100%
@@ -238,15 +238,21 @@
                 margin-top: 0px
                 margin-right: 0px
 
+
+    .updates
+        .updates__form
+            .updates__email
+                width: 50%
+
 @media (min-width: 1366px)
     .header
         .header__nav
             .nav__list
                 width: 950px
                 .nav__item
-                    font-size: 30px                    
+                    font-size: 20px                    
                 .header__nav__item--last
-                    flex-basis: 26%
+                    flex-basis: 20%
 
     .our-services
         height: 921px
@@ -282,7 +288,9 @@
     .brand
         .brand__images
             .brand__photo
-                padding: 55px
+                padding: 50px 120px
+            .brand__photo--lower
+                
 
 
     .pricing

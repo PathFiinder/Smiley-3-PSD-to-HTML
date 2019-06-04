@@ -1359,23 +1359,55 @@ body {
 }
 
 .updates .updates__form .updates__email::-webkit-input-placeholder {
-  color: #a7a7a7;
-  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 .updates .updates__form .updates__email:-ms-input-placeholder {
-  color: #a7a7a7;
-  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 .updates .updates__form .updates__email::-ms-input-placeholder {
-  color: #a7a7a7;
-  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 .updates .updates__form .updates__email::placeholder {
-  color: #a7a7a7;
-  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 .updates .updates__button-confirm {
@@ -1707,8 +1739,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: no-wrap;
-        flex-wrap: no-wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .brand .brand__images .brand__photo {
     -ms-flex-preferred-size: 25%;
@@ -1773,6 +1805,9 @@ body {
     margin-top: 0px;
     margin-right: 0px;
   }
+  .updates .updates__form .updates__email {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1366px) {
@@ -1780,11 +1815,11 @@ body {
     width: 950px;
   }
   .header .header__nav .nav__list .nav__item {
-    font-size: 30px;
+    font-size: 20px;
   }
   .header .header__nav .nav__list .header__nav__item--last {
-    -ms-flex-preferred-size: 26%;
-        flex-basis: 26%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
   .our-services {
     height: 921px;
@@ -1824,7 +1859,7 @@ body {
     height: 100%;
   }
   .brand .brand__images .brand__photo {
-    padding: 55px;
+    padding: 50px 120px;
   }
   .pricing .pricing__offert {
     width: 371px;
