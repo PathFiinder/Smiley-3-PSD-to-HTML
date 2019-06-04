@@ -81,7 +81,9 @@ document.querySelector(".team__order__circle--" + circleDivList[0]).addEventList
     document.querySelector(".team__order__circle--" + circleDivList[0]).classList.add("team__order__circle--active")
     document.querySelector(".team__order__circle--" + circleDivList[1]).classList.remove("team__order__circle--active")
     document.querySelector(".team__order__circle--" + circleDivList[2]).classList.remove("team__order__circle--active")
-    document.querySelector(".container__image__photo").classList.add("container__image__photo--active")
+    document.querySelector(".container__image__photo--primary").classList.add("container__image__photo--active")
+    document.querySelector(".container__image__photo--secondary").classList.remove("container__image__photo--active")
+    document.querySelector(".container__image__photo--tertiary").classList.remove("container__image__photo--active")
     document.querySelector(".team__member__primary").style.zIndex = 2
     document.querySelector(".team__member__secondary").style.zIndex = 1
     document.querySelector(".team__member__tertiary").style.zIndex = 0
@@ -92,7 +94,9 @@ document.querySelector(".team__order__circle--" + circleDivList[1]).addEventList
     document.querySelector(".team__order__circle--" + circleDivList[1]).classList.add("team__order__circle--active")
     document.querySelector(".team__order__circle--" + circleDivList[2]).classList.remove("team__order__circle--active")
     document.querySelector(".team__order__circle--" + circleDivList[0]).classList.remove("team__order__circle--active")
-    document.querySelector(".container__image__photo").classList.add("container__image__photo--active")
+    document.querySelector(".container__image__photo--primary").classList.remove("container__image__photo--active")
+    document.querySelector(".container__image__photo--secondary").classList.add("container__image__photo--active")
+    document.querySelector(".container__image__photo--tertiary").classList.remove("container__image__photo--active")
     document.querySelector(".team__member__primary").style.zIndex = 0
     document.querySelector(".team__member__secondary").style.zIndex = 2
     document.querySelector(".team__member__tertiary").style.zIndex = 1
@@ -102,7 +106,9 @@ document.querySelector(".team__order__circle--" + circleDivList[2]).addEventList
     document.querySelector(".team__order__circle--" + circleDivList[2]).classList.add("team__order__circle--active")
     document.querySelector(".team__order__circle--" + circleDivList[0]).classList.remove("team__order__circle--active")
     document.querySelector(".team__order__circle--" + circleDivList[1]).classList.remove("team__order__circle--active")
-    document.querySelector(".container__image__photo").classList.add("container__image__photo--active")
+    document.querySelector(".container__image__photo--primary").classList.remove("container__image__photo--active")
+    document.querySelector(".container__image__photo--secondary").classList.remove("container__image__photo--active")
+    document.querySelector(".container__image__photo--tertiary").classList.add("container__image__photo--active")
     document.querySelector(".team__member__primary").style.zIndex = 1
     document.querySelector(".team__member__secondary").style.zIndex = 0
     document.querySelector(".team__member__tertiary").style.zIndex = 2
