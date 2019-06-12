@@ -258,6 +258,10 @@ body {
   overflow: hidden;
 }
 
+.our-services .main-services__header--none {
+  display: none;
+}
+
 .our-services .main-services {
   height: 400px;
   display: -webkit-box;
@@ -388,6 +392,10 @@ body {
   position: relative;
 }
 
+.media .media__title--none {
+  display: none;
+}
+
 .media .media__image {
   height: 100%;
   width: 100%;
@@ -425,13 +433,21 @@ body {
   height: 1430px;
   padding-top: 20px;
   position: relative;
+  margin: auto;
+  font-family: Roboto;
+}
+
+.portfolio .portfolio__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .portfolio .portfolio__caption {
   height: 90px;
   width: 80%;
   margin: auto;
-  font-family: Roboto;
   text-align: center;
   position: relative;
 }
@@ -465,6 +481,10 @@ body {
   margin-top: 15px;
   color: white;
   font-family: Roboto;
+}
+
+.portfolio .portfolio__tags .portfolio__tags__title--none {
+  display: none;
 }
 
 .portfolio .portfolio__tags .tags__list {
@@ -652,6 +672,13 @@ body {
   overflow: hidden;
 }
 
+.team .team__title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
 .team .team__caption {
   width: 80%;
   height: 100px;
@@ -659,12 +686,6 @@ body {
   text-align: center;
   margin: 0 auto;
   position: relative;
-}
-
-.team .team__caption .team__caption__title {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-size: 22px;
 }
 
 .team .team__caption .team__caption__content {
@@ -694,6 +715,10 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   overflow: hidden;
+}
+
+.team .team__member .team__member__heading--none {
+  display: none;
 }
 
 .team .team__member .member__container .member__container__image {
@@ -863,18 +888,19 @@ body {
   position: relative;
 }
 
+.clients .clients__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .clients .clients__header {
   height: 100px;
   width: 80%;
   margin: 0 auto;
   text-align: center;
   position: relative;
-}
-
-.clients .clients__header .clients__header__title {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .clients .clients__header .clients__header__content {
@@ -1014,6 +1040,10 @@ body {
   background-color: rgba(128, 128, 128, 0.2);
 }
 
+.brand .brand__title--none {
+  display: none;
+}
+
 .brand .brand__images {
   width: 100%;
   height: 100%;
@@ -1043,18 +1073,19 @@ body {
   position: relative;
 }
 
+.pricing .pricing__title {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .pricing .pricing__caption {
   width: 80%;
   height: 100px;
   margin: 0 auto;
   text-align: center;
   position: relative;
-}
-
-.pricing .pricing__caption .pricing__caption__title {
-  font-size: 22px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .pricing .pricing__caption .pricing__caption__content {
@@ -1212,18 +1243,19 @@ body {
   padding-top: 20px;
 }
 
-.news .news__caption {
-  margin: 0 auto;
-  width: 80%;
-  height: 100px;
-  text-align: center;
-  position: relative;
-}
-
-.news .news__caption .news__caption__title {
+.news .news__title {
   text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.news .news__caption {
+  margin: 0 auto;
+  width: 80%;
+  height: 80px;
+  text-align: center;
+  position: relative;
 }
 
 .news .news__caption .news__caption__content {
@@ -1324,18 +1356,19 @@ body {
   text-align: center;
 }
 
+.updates .updates__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 .updates .updates__caption {
   height: 100px;
   width: 85%;
   margin: 0 auto;
   text-align: center;
   position: relative;
-}
-
-.updates .updates__caption .updates__caption__title {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
 }
 
 .updates .updates__caption .updates__caption__content {
