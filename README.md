@@ -5,7 +5,7 @@ Source: https://drive.google.com/drive/folders/0Bw2hu70L5Ye_cmNKalFzNld2a1E?fbcl
 
 Tech Work used:
  - HTML5
- - CSS3 (Flexbox, BEM)
+ - CSS3 (Flexbox)
  - SASS
  - RWD (Mobile First)
  - JavaScript
